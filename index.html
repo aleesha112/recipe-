@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Delight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Recipe Delight</h1>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Main Content -->
+<main>
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Recipe Delight</h2>
+        <p>Your go-to place for delicious recipes!</p>
+        <div class="featured-recipes">
+            <div class="recipe-card" data-recipe="pancake" onclick="showRecipe('pancake')">
+                <div class="recipe-image" style="background-image: url('images/pancakes.jpg');"></div>
+                <div class="recipe-info">
+                    <h3>Delicious Pancakes</h3>
+                    <p>Fluffy and light pancakes perfect for breakfast.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="spaghetti" onclick="showRecipe('spaghetti')">
+                <div class="recipe-image" style="background-image: url('images/sapghatti.jpg');"></div>
+                <div class="recipe-info">
+                    <h3>Spaghetti Carbonara</h3>
+                    <p>A classic Italian pasta dish with creamy sauce.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="chicken" onclick="showRecipe('chicken')">
+                <div class="recipe-image" style="background-image: url('images/chicken curry.png');"></div>
+                <div class="recipe-info">
+                    <h3>Chicken Curry</h3>
+                    <p>Spicy and savory chicken curry.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="cake" onclick="showRecipe('cake')">
+                <div class="recipe-image" style="background-image: url('images/chocolate cake.jpg');"></div>
+                <div class="recipe-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and moist chocolate cake.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <!-- New Recipes -->
+            <div class="recipe-card" data-recipe="biryani" onclick="showRecipe('biryani')">
+                <div class="recipe-image" style="background-image: url('images/biryani.png');"></div>
+                <div class="recipe-info">
+                    <h3>Delicious Biryani</h3>
+                    <p>Flavorful and aromatic rice dish with spices and meat.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="chinese-rice" onclick="showRecipe('chinese rice')">
+                <div class="recipe-image" style="background-image: url('images/chinese-rice.png');"></div>
+                <div class="recipe-info">
+                    <h3>Chinese Rice</h3>
+                    <p>Stir-fried rice with vegetables and savory sauce.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="custard" onclick="showRecipe('custard')">
+                <div class="recipe-image" style="background-image: url('images/custard.png');"></div>
+                <div class="recipe-info">
+                    <h3>Classic Custard</h3>
+                    <p>Rich and creamy custard dessert.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="fruit-trifle" onclick="showRecipe('fruit trifle')">
+                <div class="recipe-image" style="background-image: url('images/fruit-trifle.png');"></div>
+                <div class="recipe-info">
+                    <h3>Fruit Trifle</h3>
+                    <p>Layers of fruit, cream, and sponge cake.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="lasagna" onclick="showRecipe('lasagna')">
+                <div class="recipe-image" style="background-image: url('images/lasagna.png');"></div>
+                <div class="recipe-info">
+                    <h3>Classic Lasagna</h3>
+                    <p>Hearty layers of pasta, meat sauce, and cheese baked to perfection.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="tacos" onclick="showRecipe('tacos')">
+                <div class="recipe-image" style="background-image: url('images/tacos.png');"></div>
+                <div class="recipe-info">
+                    <h3>Spicy Tacos</h3>
+                    <p>Flavor-packed tacos with seasoned meat, fresh vegetables, and spicy salsa.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="muffins" onclick="showRecipe('muffins')">
+                <div class="recipe-image" style="background-image: url('images/muffins.png');"></div>
+                <div class="recipe-info">
+                    <h3>Blueberry Muffins</h3>
+                    <p>Soft and moist muffins loaded with fresh blueberries and a hint of lemon zest.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="recipe-card" data-recipe="sushi" onclick="showRecipe('sushi')">
+                <div class="recipe-image" style="background-image: url('images/sushi.png');"></div>
+                <div class="recipe-info">
+                    <h3>California Roll Sushi</h3>
+                    <p>Delicious sushi rolls with crab, avocado, and cucumber, wrapped in seaweed and rice.</p>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Recipe Details Section -->
+   <section id="recipe-details" class="recipe-details">
+    <div class="recipe-content">
+        <span class="close" onclick="closeRecipe()">×</span>
+        <h2 id="recipe-title">Recipe Title</h2>
+        <div id="recipe-body">
+            <img id="recipe-image" src="" alt="Recipe Image">
+            <p id="recipe-description"></p>
+        </div>
+    </div>
+</section>
+    
+    <!-- Other Sections -->
+</main>
+
+       <!-- About Section -->
+<section id="about" class="about">
+    <div class="about-background">
+        <div class="about-content">
+            <div class="text-content">
+                <h2>About Us</h2>
+                <p>Welcome to Recipe Delight! We are passionate about sharing delicious and easy-to-make recipes. Our goal is to provide you with a variety of recipes that are both enjoyable and simple to prepare. Whether you're a seasoned chef or a beginner, you'll find recipes that suit your taste.</p>
+                <p>At Recipe Delight, we believe that cooking should be a fun and rewarding experience. Our team is dedicated to creating recipes that not only taste great but are also easy to follow. We use fresh ingredients and focus on flavor to make sure every dish is a winner.</p>
+                <p>Our collection includes a range of recipes from hearty meals to light snacks and indulgent desserts. We are constantly updating our site with new recipes and cooking tips, so you can always find something new and exciting to try.</p>
+                <p>Join us on our culinary journey and discover new favorites along the way. Thank you for visiting Recipe Delight – we hope you enjoy our recipes as much as we enjoy sharing them with you!</p>
+                <div class="team">
+                    <h3>Meet Our Team</h3>
+                    <div class="team-member">
+                        <img src="images/chef 1.png" alt="Chef Jane" />
+                        <div class="member-info">
+                            <h4>Chef Jane Doe</h4>
+                            <p>Jane is our lead chef and recipe developer. With over 15 years of experience in the culinary world, she brings a wealth of knowledge and creativity to Recipe Delight.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <img src="images/chef 2.png" alt="Sous Chef John" />
+                        <div class="member-info">
+                            <h4>Sous Chef John Smith</h4>
+                            <p>John is our sous chef and expert in creating mouth-watering dishes. His attention to detail and passion for cooking ensures every recipe is perfect.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+       <!-- Contact Section -->
+<section id="contact" class="contact">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have a question, feedback, or just want to say hello, feel free to reach out using the form below or through our contact details.</p>
+        <div class="contact-info">
+            <div class="contact-details">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> support@recipedelight.com</p>
+                <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+                <p><strong>Address:</strong> 123 Culinary Lane, Flavor Town, FC 45678</p>
+            </div>
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+        <!-- Optional: Add a map -->
+        <div class="contact-map">
+            <h3>Find Us</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.054794315453!2d-122.41941868468146!3d37.77492977975809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085816dbeaa95d3%3A0x39dcd1d5e15e7b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1632613823586!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Recipe Delight. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

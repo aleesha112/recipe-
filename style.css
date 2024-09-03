@@ -1,0 +1,374 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #f4a261; /* Warm yellowish color */
+}
+
+a:hover {
+    color: #e07b39; /* Slightly darker yellowish color */
+}
+
+/* Header Styles */
+header {
+    background-color: #f4a261; /* Warm yellowish color */
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff; /* White text color for contrast */
+}
+
+header nav a {
+    margin: 0 1rem;
+    font-weight: 600;
+    color: #fff; /* White text color for nav links */
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem 1rem;
+}
+
+/* Hero Section Styles */
+.hero {
+    text-align: center;
+    padding: 2rem 0;
+    background: #fff5e5; /* Very light yellow background */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #f4a261; /* Warm yellowish color */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+    color: #f57c00; /* Slightly darker yellowish color */
+}
+
+/* Featured Recipes Section */
+.featured-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.recipe-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(25% - 1rem);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.recipe-info {
+    padding: 1rem;
+}
+
+.recipe-info h3 {
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.recipe-info p {
+    margin: 0 0 1rem;
+    color: #666; /* Slightly muted text color */
+}
+
+.read-more {
+    color: #f4a261; /* Warm yellowish color */
+    font-weight: 600;
+}
+
+.read-more:hover {
+    color: #e07b39; /* Slightly darker yellowish color */
+}
+
+
+
+/* Recipe Details Modal */
+.recipe-details {
+    display: none; /* Hide the details by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure it appears above other content */
+}
+
+.recipe-details.show {
+    display: block; /* Show the details when .show class is added */
+}
+
+.recipe-content {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.recipe-content img {
+    width: 50%;
+    height: auto; /* Adjust height to maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center horizontally */
+}
+.close {
+    cursor: pointer;
+    font-size: 24px;
+    float: right;
+}
+
+/* About Section Styles */
+.about {
+    padding: 60px 0;
+    background: #907c7c;
+    color: #333;
+}
+
+.about-background {
+    background: url('images/background.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 60px 0;
+}
+
+.about-content {
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background for readability */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    ;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.team {
+    margin-top: 40px;
+}
+
+.team h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.member-info {
+    text-align: left;
+}
+
+.member-info h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.member-info p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* contact form */
+/* Contact Section Styles */
+.contact {
+    padding: 40px;
+    background: #fff8e1; /* Light yellowish background color */
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-container {
+    max-width: 800px; /* Adjusted width to be more suitable */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.1em;
+    color: #666;
+}
+
+.contact-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #ffcc00; /* Yellow border for emphasis */
+}
+
+.contact-form h3 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background: #ffcc00; /* Yellow button background */
+    color: #fff;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: #e6b800; /* Slightly darker yellow on hover */
+}
+
+.contact-map {
+    margin-top: 30px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer Styles */
+footer {
+    background: #f4a261; /* Warm yellowish color */
+    padding: 1rem 0;
+    text-align: center;
+    color: #fff; /* White text color for contrast */
+    border-top: 1px solid #ddd;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .recipe-card {
+        width: calc(50% - 1rem);
+    }
+
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav {
+        margin-top: 1rem;
+    }
+
+    header nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .recipe-card {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
